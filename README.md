@@ -25,3 +25,8 @@ For Next js
 ```cli
 docker run --rm -it -v ${pwd}:/build ghcr.io/danielrondongarcia/build-node:latest npx create-next-app nextjs-typescript-starter --example "https://github.com/vercel/nextjs-postgres-auth-starter"
 ```
+
+With port
+```cli
+docker run --rm -it -p 3000:3000 -v ${pwd}:/build ghcr.io/danielrondongarcia/build-node:latest npm run dev
+```

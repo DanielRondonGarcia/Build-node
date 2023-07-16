@@ -6,4 +6,3 @@ WORKDIR /build
 
 # Configura node como punto de entrada
 #ENTRYPOINT ["node"]
-#ENTRYPOINT ["/bin/bash"]

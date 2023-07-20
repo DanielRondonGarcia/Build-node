@@ -4,5 +4,8 @@ FROM node:latest
 # Configurando el directorio de trabajo
 WORKDIR /build
 
-# Configura node como punto de entrada
-#ENTRYPOINT ["node"]
+# Install pnpm globally
+RUN npm install -g pnpm
+
+# Add global node_modules to PATH
+ENV PATH /app/node_modules/.bin:$PATH

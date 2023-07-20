@@ -13,6 +13,9 @@ RUN chown -R node:node /build
 # Install pnpm globally
 RUN npm install -g pnpm --unsafe-perm
 
+# Change the permissions of /build folder
+RUN chmod -R 777 /build
+
 # Set back to node user
 USER node
 
